@@ -1,0 +1,164 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: "Libre Baskerville" "Bebas Neue&family";
+}
+.logo{
+    object-fit: contain;
+    border: 15px;
+}
+ .header{
+    background-color: beige;
+    background-image: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3)),url(images/ai-generated-8524305.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    min-height: 100vh;
+}
+
+nav{
+    background: rgb(237, 237, 237, .1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul{
+    display:flex;
+    padding: 2% 6%;
+    float: right;
+    margin-right: 1px;
+}
+.navbar a{
+    color:#ffffff;
+    padding: 20px;
+    text-align: right;
+    float: hidden;
+    font: 1em "Libre Baskerville";
+    font-size: medium;
+    position:static;
+}
+.navbar a:hover{
+    padding: auto;
+    border-radius: 10px;
+    border: #f1ebeb;
+    border-style:groove;
+    flex: 3;
+}
+.text-box{
+    color: #fdfcfc;
+    font-size: small;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+   
+}
+.text-box p{
+    font-size: 20px; 
+    font-family: Rubik;
+}
+.text-box h1 h2{
+    font-size: 30px;
+    font-family: "Libre Baskerville";
+}
+nav .fa{
+    display: none;
+}
+.produit{
+    width:100%;
+    height: 100vh;
+    background-image: url();
+    
+}
+@media(max-width: 700px){
+    .text-box h1 h2{
+        font-size: 10px;
+    }
+    .text-box p{
+        font-size: 10px;
+    }
+
+    .navbar a{
+        color:#ffffff;
+        float: hidden;
+        font: 1em "Libre Baskerville";
+        font-size: medium;
+        position:static;
+    }
+    nav .fa{
+        display: block;
+        color: green;
+        margin: 1Opx;
+        font: 22px;
+        cursor: pointer;
+    }
+}
+.head1{
+    font-family: "Playwrite NZ";
+    font-size: larger;
+    text-align: center;
+    padding-top: 50px;
+    text-shadow: 2px 3px 5px rgb(98, 255, 59, 0.7);
+}
+.head1:before{
+    content: "";
+    width: 120px;
+    height: 2px;
+    color: rgb(98, 255, 98);
+    display: block;
+    position: absolute;
+}
+.produits img{
+    width: 400px;
+    height: 500px;
+}
+
+.container{
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    margin: 100px auto;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}  
+.intro{
+width: 265px;
+height: 200px;
+padding: 6px;
+box-sizing: border-box;
+position: absolute;
+bottom: 70px;
+background: rgb(27, 27, 27, 0.3);
+color: white;
+visibility: hidden;
+}
+.card{
+    width: 500px;
+    margin: 50px;
+    box-shadow: 5px 20px 20px black;
+    overflow: hidden;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .intro{
+    height: 100px;
+    bottom: 70px;
+    background: black;
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover img{
+    transform:scale(1.2) rotate(-2deg);
+}
+/*.box:hover{
+    background-color:  rgb(130, 255, 130);
+    transform: scale(0.9);
+}
+.box:hover p{
+
+   font-family: "Libre Baskerville";
+}*/
+  
