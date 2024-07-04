@@ -70,6 +70,7 @@ ul li{
 ul li:hover ul.drop-menu{
     visibility: visible;
     background-color: rgb(192, 231, 176);
+    backdrop-filter: blur(20px);
 }
 /*
 .wrapper .nav-links{
