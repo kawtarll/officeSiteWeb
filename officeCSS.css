@@ -3,9 +3,11 @@
     margin: 0;
     font-family: "Libre Baskerville" "Bebas Neue&family";
 }
-.logo{
+nav .logo img{
     object-fit: contain;
-    border: 15px;
+    border-radius: 20px;
+    float: left;
+
 }
  .header{
     background-color: beige;
@@ -15,43 +17,123 @@
     position: relative;
     min-height: 100vh;
 }
-
+.drop-menu1 ul{
+    text-align: center;
+    backdrop-filter: blur(10px);
+    font: 1em "Libre Baskerville";
+}
 nav{
+    position: sticky;
+    top: 5px;
+    backdrop-filter: blur(20px);
+    text-align:justify; 
+    height: 70px;
+    z-index: 1;
+}
+.wrapper li{
+    display: inline-flex;
+    position: relative;
+}
+ul li a.titre{
+    padding: 30px;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    
+}
+ul li a.sous-titre{
+    color: #000000;
+    font-family: Rubik;
+}
+ul li ul.drop-menu li{
+    display: block;
+    margin: 2px 0px;
+    color: #000000;
+
+}
+ul li ul.drop-menu{
+    position: absolute;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    margin: 2px 3px;
+    top: 50px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: rgb(246, 250, 246);
+    visibility: hidden;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li:hover ul.drop-menu{
+    visibility: visible;
+    background-color: rgb(192, 231, 176);
+}
+/*
+.wrapper .nav-links{
+    display: inline-flex;
+}
+.nav-links li{
+    list-style: none;
+    }
+.nav-links li a{
+            color:#ffffff;
+            padding: 9px 15px;
+            text-align: right;
+            font: 1em "Libre Baskerville";
+            font-size: medium;
+            transition:all 0.3s ease ;
+}
+.nav-links{
+    position: relative;
+}
+nav .wrapper{
     background: rgb(237, 237, 237, .1);
     backdrop-filter: blur(10px);
     display: flex;
-    padding: 1% 2%;
+    padding: 0px 30px;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
-.navbar ul{
-    display:flex;
-    padding: 2% 6%;
-    float: right;
-    margin-right: 1px;
+
+
+
+
+.nav-links .drop-menu1{
+      background-color: rgb(0, 0, 0);
+      width: 300px;
+      height: 350px;
+      position: absolute;
+      border-radius: 20px;
+      opacity: 0;
+      visibility: hidden;
 }
-.navbar a{
-    color:#ffffff;
-    padding: 20px;
-    text-align: right;
-    float: hidden;
-    font: 1em "Libre Baskerville";
-    font-size: medium;
-    position:static;
+.nav-links li a{
+    background: 3A3B3C;
+    transition: all 0.3 ease;
 }
-.navbar a:hover{
+.nav-links li:hover .drop-menu1{
     padding: auto;
-    border-radius: 10px;
-    border: #f1ebeb;
-    border-style:groove;
+    transition: ease;
     flex: 3;
+    opacity: 1;
+    visibility: visible;
 }
+.drop-menu1 li a{
+    width: 100%;
+    height: 200px;
+    display: block;
+    transition: all 0.3 ease;
+}*/
 .text-box{
     color: #fdfcfc;
     font-size: small;
     position: relative;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 200px;
    
 }
 .text-box p{
@@ -71,6 +153,151 @@ nav .fa{
     background-image: url();
     
 }
+.head1{
+    font-family: "Playwrite NZ";
+    font-size:x-large;
+    text-align: center;
+    padding-top: 30px;
+    text-shadow: 2px 3px 5px rgba(98, 255, 59, 0.7);
+    position: relative;
+}
+/*.head1:before{
+    content: "";
+    width: 120px;
+    height: 2px;
+    color: rgb(98, 255, 98);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}*/
+.produits img{
+    width: 300px;
+    height: 400px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    background-color: rgb(6, 34, 6);
+}  
+.intro{
+width: 270px;
+height: 200px;
+padding: 6px;
+box-sizing: border-box;
+position: absolute;
+bottom: 20px;
+background: rgba(0, 0, 0, 0.3);
+color: white;
+visibility: hidden;
+}
+.card{
+    width: 300px;
+    margin: 30px;
+    box-shadow: 5px 20px 20px black;
+    overflow: hidden;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .intro{
+    height: 100px;
+    bottom: 70px;
+    background: rgb(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover img{
+    transform:scale(1.2) rotate(-2deg);
+}
+
+
+.slider{
+    position: relative;
+    width: 94%;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+    padding-left: 100px;
+    padding: 30px;
+    justify-content: space-between;
+    background-color: rgb(60, 80, 45);
+}
+.slider img{
+    width: 300px;
+    height: 400px;
+    display: none;
+    border-radius: 25% 10% ;
+}
+.slider button{
+    position:absolute;
+    top: 50%;
+    transform: translate(-50%);
+    font-size: 2rem;
+    background-color:rgb(3, 74, 3);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.prev{
+    left: 10px;
+}
+.next{
+    right: 685px;
+}
+.ORMVAT p{
+     position: absolute;
+     padding-left: 400px;
+     color: #ffffff;
+     font-family: Rubik;
+     font-size: larger; 
+     padding-top: 40px;
+     padding-bottom: 30px;
+}
+.ORMVAT p::first-line{
+    color: rgb(142, 219, 26);
+}
+.ORMVAT ul{
+     position: absolute;
+     padding-left: 400px;
+     color: rgb(185, 251, 130);
+     font-size: large;
+     font-family: Rubik;
+     padding-bottom:0px ;
+     padding-top:190px ;
+}
+/*
+.slides p::first-line{
+    color: greenyellow;
+}*/
+.curved{
+
+    z-index: -1;
+}
+.missions{
+    padding-bottom: 200px;
+    margin: 0;
+}
+.slides img{
+     display: none;
+}
+.slides 
+img.displaySlide{
+    display: block;
+}
+.slides-container p{
+    display: none;
+}
+p.displaySlide{
+    display: block;
+}
+
 @media(max-width: 700px){
     .text-box h1 h2{
         font-size: 10px;
@@ -94,65 +321,7 @@ nav .fa{
         cursor: pointer;
     }
 }
-.head1{
-    font-family: "Playwrite NZ";
-    font-size: larger;
-    text-align: center;
-    padding-top: 50px;
-    text-shadow: 2px 3px 5px rgb(98, 255, 59, 0.7);
-}
-.head1:before{
-    content: "";
-    width: 120px;
-    height: 2px;
-    color: rgb(98, 255, 98);
-    display: block;
-    position: absolute;
-}
-.produits img{
-    width: 400px;
-    height: 500px;
-}
 
-.container{
-    width: 90%;
-    padding: 20px;
-    display: flex;
-    margin: 100px auto;
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
-}  
-.intro{
-width: 265px;
-height: 200px;
-padding: 6px;
-box-sizing: border-box;
-position: absolute;
-bottom: 70px;
-background: rgb(27, 27, 27, 0.3);
-color: white;
-visibility: hidden;
-}
-.card{
-    width: 500px;
-    margin: 50px;
-    box-shadow: 5px 20px 20px black;
-    overflow: hidden;
-}
-.card:hover{
-    cursor: pointer;
-}
-.card:hover .intro{
-    height: 100px;
-    bottom: 70px;
-    background: black;
-    opacity: 1;
-    visibility: visible;
-}
-.card:hover img{
-    transform:scale(1.2) rotate(-2deg);
-}
 /*.box:hover{
     background-color:  rgb(130, 255, 130);
     transform: scale(0.9);
@@ -161,4 +330,33 @@ visibility: hidden;
 
    font-family: "Libre Baskerville";
 }*/
-  
+
+
+/*
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: rgb(1, 1, 1);
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+
+}
+.slider-nav a:hover{
+    opacity: 1;
+    background-color: rgb(206, 203, 203);
+    width: 0.6rem;
+    height: 0.6rem;
+}
+  */

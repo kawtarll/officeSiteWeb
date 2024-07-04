@@ -26,34 +26,91 @@
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="header">
+    <section class="header"><i class="fa fa-times"></i>
         <nav>
-             <a href="officeHTML.html" class="logo"><img src="images/logoo.png" height="50px" alt="" ></a>
-             <i class="fa fa-times"></i>
-             <div class="navbar">
-                <ul> 
-                    <li><a href="acceuil.html">Acceuil</a></li> 
-                    <li><a href="services.html">Services</a></li>   
-                    <li><a href="apropos.html">Apropos</a></li>   
-                    <li><a href="messions.html">Messions</a></li>   
-                    <li><a href="actualites.html">Actualités</a></li> 
-                    
+            <div class="wrapper">
+             <a href="officeHTML.html" class="logo"><img src="images/ORMVAT.png" height="50px" weight="50px"
+     alt="logoo" ></a>
+                <ul class="nav-links"> 
+                    <li><a href="officeHTML.html" class="titre">Acceuil</a></li> 
+                    <li> 
+                        <a href="#" class="titre">Aménagements hydro-agricoles &#x2B9E; </a>
+                          <ul class="drop-menu">
+                            <li><a href="Etudes.html" class="sous-titre">Etudes</a></li>
+                            <li><a href="ProjetRen.html" class="sous-titre">Projet de reconversion</a></li>
+                            <li><a href="MRG.html" class="sous-titre">Modernisation des réseaux gravitaires</a></li>
+                            <li><a href="APpmh.html" class="sous-titre">Aménagement des Périmètres de PMH</a></li>
+                            <li><a href="APA.html" class="sous-titre">Aménagement des pistes agricoles</a></li>
+                            <li><a href="MTC.html" class="sous-titre">Melkisation des terres collectives</a></li>
+                            <li><a href="RA.html" class="sous-titre">Remembrement agricole</a></li>
+                          </ul>
+                    </li>      
+                    <li>
+                        <a href="#" class="titre">Gestion des réseaux d'Irrigation &#x2B9E;</a>
+                        <ul class="drop-menu">
+                            <li><a href="ERI.html" class="sous-titre">Exploitation des Réseaux d'Irrigation</a></li>
+                            <li><a href="MRI.html" class="sous-titre">Maintenance des Réseaux d'Irrigation</a></li>
+                        </ul>
+                    </li>   
+                    <li>
+                        <a href="#" class="titre"> Ressources humaines &#x2B9E;</a>
+                        <ul class="drop-menu">
+                            <li><a href="CapitalHumain.html" class="sous-titre">Capital Humain</a></li>
+                            <li><a href="AppelALaCandidature.html" class="sous-titre"> Appel à la candidature</a></li>
+                            <li><a href="Rectrutements.html" class="sous-titre">Rectrutements</a></li>
+                        </ul>
+                    </li>
                 </ul>
-             </div>
+            
+            </div>
              <i class="fa fa-bars" ></i>
         </nav>
 <div class="text-box">
     <h1>ORMVAT</h1>
-   <h2>Office Régional
-        de Mise en Valeur
-        Agricole du Tadla
-    </h2>
-        <p> L‘ORMVAt est un établissement public,
-            <br> créé par Décret n° 828-66 du 7 Rajeb 1386 (22 Octobre 1966)
-            <br> et placé sous la tutelle du Ministère de l’Agriculture, 
-            <br>de la Pêche Maritime, du Développement Rural et des Eaux et Forêts.</p>
+   <h2>Une région à vocation agricole par exellence  </h2>
+   
+        <p>La zone d'action de l'ORMVAT du TADLA chevauche sur 
+        les provinces de Béni Mellal,Fquih Ben Salah et Azillal. <br>
+        Elle englobe 21 commmunes Territoriales et 5 cercles.</p>
 </div>
      
+    </section>
+    <section class="missions">
+        <div class="slider">
+            <div class="slides">
+                    <div class="ORMVAT">
+                        <p>
+                            L‘ORMVAt est un établissement public,<br>
+                            créé par Décret n° 828-66 du 7 Rajeb 1386 (22 Octobre 1966)<br>
+                            et placé sous la tutelle du Ministère de l’Agriculture,<br>
+                            de la Pêche Maritime, du Développement Rural et des Eaux et Forêts
+                            .
+                        </p>
+                       <ul>
+                        <li>infrastructures agro-industruelles .</li>
+                        <li>organisations professionnelles .</li>
+                        <li>aménagement des perimetres de PMH.</li>
+                        <li>filiéres agrocoles principales.</li>
+                       </ul>
+                    </div>
+                    <div class="slides-container">
+                                     <img src="images/museum-1695872_1280.jpg" alt="img1" class="slide1">> 
+                    </div>
+                    <div class="slides-container">
+                                     <img src="images/pexels-rossella-fasoli-507860397-16456538.jpg" alt="img2" class="slide2">  
+                    </div>  
+                    <div class="slides-container">                 
+                                      <img src="images/pmh.jpg" alt="img3" class="slide3">
+                    </div>
+                    <div class="slides-container">                    
+                                      <img src="images/pexels-eduschadesoares-5498215.jpg" alt="img4" class="slide4">
+                    </div> 
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094</button>
+            <button class="next" onclick="nextSlide()">&#10095</button>
+        </div>
+
+    </div>
     </section>
     <section class="produits">
         <h3 class="head1">Produits du terroir labélisés</h3>
@@ -61,29 +118,35 @@
                 <div class="card">
                       
                     <a> <img src="images/honey.jpg" alt="miel d'Euphorbe"> 
-                        <div class="intro">
-                            <p>Le miel d'Euphorbe, également appeler en arabe "Darghmouss"
-                             est un produit a partir des fleurs d'Euphorbe résinifere,
-                             une plante cactoide et épineuse poussant essentiellement au maroc</p></a>
-                        </div>
+                             <div class="intro">
+                                    <p>Le miel d'Euphorbe, également appeler en arabe "Darghmouss"
+                                    est un produit a partir des fleurs d'Euphorbe résinifere,
+                                    une plante cactoide et épineuse poussant essentiellement au maroc</p>
+                            </div>
+                    </a>
+                             
                 </div>
                 <div class="card">
                      <a> <img src="images/market-535206_1280.jpg" alt="olive">
                         <div class="intro">
                             <p>Le patrimoine de la zone de l'ORMVA du Tadla<br>
-                             occupe plus de 70% de la superficie arboricole totale</p></a>
+                             occupe plus de 70% de la superficie arboricole totale</p>
                         </div>
+                    </a>
                 </div>
                 <div class="card">
-                     <a> <img src="images/olive-4392235_1280.jpg" alt="olive tree"><p>
+                     <a> <img src="images/olive-4392235_1280.jpg" alt="olive tree">
                         <div class="intro">
+                            <p>
                              La culture de l’olivier se démarque comme principale spéculation<br> arboricole 
                             fruitière du périmètre du Tadla.
-                           </p></a>
+                           </p>
                         </div>
+                     </a>
                 </div>
             </div>
-        
     </section>
+
+    <script src="missionsSection.js"></script>
 </body>
 </html>
