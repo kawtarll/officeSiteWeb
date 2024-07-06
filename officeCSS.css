@@ -69,7 +69,7 @@ ul li{
 
 ul li:hover ul.drop-menu{
     visibility: visible;
-    background-color: rgb(192, 231, 176);
+    background-color: rgba(218, 248, 207, 0.497);
     backdrop-filter: blur(20px);
 }
 /*
@@ -156,12 +156,14 @@ nav .fa{
 }
 .head1{
     font-family: "Playwrite NZ";
-    font-size:x-large;
+    font-size:76%;
     text-align: center;
     padding-top: 30px;
     text-shadow: 2px 3px 5px rgba(98, 255, 59, 0.7);
     position: relative;
+    color: #fdfcfc;
 }
+
 /*.head1:before{
     content: "";
     width: 120px;
@@ -227,7 +229,7 @@ visibility: hidden;
     padding-left: 100px;
     padding: 30px;
     justify-content: space-between;
-    background-color: rgb(60, 80, 45);
+    background-color: rgb(253, 253, 253);
 }
 .slider img{
     width: 300px;
@@ -255,7 +257,7 @@ visibility: hidden;
 .ORMVAT p{
      position: absolute;
      padding-left: 400px;
-     color: #ffffff;
+     color: #000000;
      font-family: Rubik;
      font-size: larger; 
      padding-top: 40px;
@@ -281,10 +283,7 @@ visibility: hidden;
 
     z-index: -1;
 }
-.missions{
-    padding-bottom: 200px;
-    margin: 0;
-}
+
 .slides img{
      display: none;
 }
