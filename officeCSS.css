@@ -48,7 +48,7 @@ ul li a.sous-titre{
 ul li ul.drop-menu li{
     display: block;
     margin: 2px 0px;
-    color: #000000;
+    color: #ffffff;
 
 }
 ul li ul.drop-menu{
@@ -71,6 +71,7 @@ ul li:hover ul.drop-menu{
     visibility: visible;
     background-color: rgba(218, 248, 207, 0.497);
     backdrop-filter: blur(20px);
+    color: #fdfcfc;
 }
 /*
 .wrapper .nav-links{
@@ -264,12 +265,12 @@ visibility: hidden;
      padding-bottom: 30px;
 }
 .ORMVAT p::first-line{
-    color: rgb(142, 219, 26);
+    color: rgb(107, 177, 0);
 }
 .ORMVAT ul{
      position: absolute;
      padding-left: 400px;
-     color: rgb(185, 251, 130);
+     color: rgb(87, 187, 5);
      font-size: large;
      font-family: Rubik;
      padding-bottom:0px ;
