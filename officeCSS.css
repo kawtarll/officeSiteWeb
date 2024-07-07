@@ -322,10 +322,37 @@ p.displaySlide{
         cursor: pointer;
     }
 }
+.button{
+    padding: 5px;
+    color: #2F2B2E;
+    border-radius: 30px;
+    border:  2px solid rgba(185, 253, 149, 0.816);
+    font-size: 13px;
+    cursor: pointer;
+}
 footer{
     position: absolute;
     width: 100%;
-    background-color: rgba(138, 135, 129, 0.796);
+    background-color: #2F2B2E;
+}
+.row{
+    display: flex;
+    padding: 30px 10%;
+    justify-content:space-between ;
+}
+.col-1{
+    color: #a8e58ce1;
+    text-align: center;
+}
+.col-2{
+    
+    color: #a8e58ce1;
+    text-align: center;
+}
+.OfficeSocialMedia{
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
 }
 
 /*.box:hover{
