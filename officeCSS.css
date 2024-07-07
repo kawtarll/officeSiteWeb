@@ -322,6 +322,11 @@ p.displaySlide{
         cursor: pointer;
     }
 }
+footer{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(138, 135, 129, 0.796);
+}
 
 /*.box:hover{
     background-color:  rgb(130, 255, 130);
