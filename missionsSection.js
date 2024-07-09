@@ -28,6 +28,7 @@ function nextSlide(){
     indexSlides++;
     showSlide(indexSlides);
 }
+
 /*
 
  function showInfos(index){

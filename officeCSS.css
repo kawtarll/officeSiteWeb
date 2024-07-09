@@ -34,15 +34,28 @@ nav{
     display: inline-flex;
     position: relative;
 }
+.sideBar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(109, 125, 109, 0.405);
+    box-shadow: -1Opx 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 999;
+}
 ul li a.titre{
     padding: 30px;
     display: block;
     color: #ffffff;
     text-align: center;
-    
 }
 ul li a.sous-titre{
-    color: #000000;
+    color: #ffffff;
     font-family: Rubik;
 }
 ul li ul.drop-menu li{
@@ -66,12 +79,17 @@ ul li{
     display: inline-block;
     position: relative;
 }
-
+ul li:hover .titre{
+    border: 1px white solid ;
+    padding: 5px;
+    border-radius: 10px;
+}
 ul li:hover ul.drop-menu{
     visibility: visible;
     background-color: rgba(218, 248, 207, 0.497);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     color: #fdfcfc;
+    box-shadow: 3px 2px 3px #ffffffc5;
 }
 /*
 .wrapper .nav-links{
@@ -299,29 +317,6 @@ p.displaySlide{
     display: block;
 }
 
-@media(max-width: 700px){
-    .text-box h1 h2{
-        font-size: 10px;
-    }
-    .text-box p{
-        font-size: 10px;
-    }
-
-    .navbar a{
-        color:#ffffff;
-        float: hidden;
-        font: 1em "Libre Baskerville";
-        font-size: medium;
-        position:static;
-    }
-    nav .fa{
-        display: block;
-        color: green;
-        margin: 1Opx;
-        font: 22px;
-        cursor: pointer;
-    }
-}
 .button{
     padding: 5px;
     color: #2F2B2E;
@@ -353,6 +348,66 @@ footer{
     font-size: 16px;
     margin: 10px;
     cursor: pointer;
+}
+@media(max-width: 700px){
+    .text-box h1 h2{
+        font-size: 10px;
+    }
+    .wrapper li{
+        display: none;
+        position: relative;
+    }
+    .text-box{
+        padding-bottom: 0px;
+        text-align: start;
+    }
+    .text-box p, 
+    .text-box h1,
+    .text-box h2{
+        font-size: 15px;
+        text-align:unset;
+        padding-top: 10px;
+
+    }
+    .sideBar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        background-color: rgba(254, 255, 253, 0.713);
+        box-shadow: -1Opx 0 10px rgba(0,0,0,0.1);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        z-index: 999;
+    }
+     .sideBar nav .fa{
+        display: block;
+        color: rgb(30, 58, 12);
+        margin: 1Opx;
+        font: 22px;
+        cursor: pointer;
+    }
+    ul li a.titre{
+        color: rgb(0, 0, 0);
+        }
+        .sideBar li{
+            position: relative;
+        }
+        ul li ul.drop-menu{
+            position: absolute;
+            right: 250px;
+            backdrop-filter: blur(10px);
+            margin: 2px 3px;
+            top: 25px;
+            width: 200px;
+            border-radius: 20px;
+            background-color: rgb(246, 250, 246);
+            visibility: hidden;
+        }
 }
 
 /*.box:hover{
