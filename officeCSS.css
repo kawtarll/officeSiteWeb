@@ -79,11 +79,7 @@ ul li{
     display: inline-block;
     position: relative;
 }
-ul li:hover .titre{
-    border: 1px white solid ;
-    padding: 5px;
-    border-radius: 10px;
-}
+
 ul li:hover ul.drop-menu{
     visibility: visible;
     background-color: rgba(218, 248, 207, 0.497);
@@ -175,7 +171,7 @@ nav .fa{
 }
 .head1{
     font-family: "Playwrite NZ";
-    font-size:76%;
+    font-size:80%;
     text-align: center;
     padding-top: 30px;
     text-shadow: 2px 3px 5px rgba(98, 255, 59, 0.7);
@@ -201,7 +197,7 @@ nav .fa{
 
 .container{
     width: 100%;
-    display: flex;
+    display:flex;
     flex-direction: row;
     justify-content: space-evenly;
     position: relative;
@@ -271,11 +267,11 @@ visibility: hidden;
     left: 10px;
 }
 .next{
-    right: 685px;
+    right: 800px;
 }
 .ORMVAT p{
      position: absolute;
-     padding-left: 400px;
+     padding-left: 450px;
      color: #000000;
      font-family: Rubik;
      font-size: larger; 
@@ -287,9 +283,9 @@ visibility: hidden;
 }
 .ORMVAT ul{
      position: absolute;
-     padding-left: 400px;
+     padding-left: 520px;
      color: rgb(87, 187, 5);
-     font-size: large;
+     font-size: x-large;
      font-family: Rubik;
      padding-bottom:0px ;
      padding-top:190px ;
@@ -350,6 +346,21 @@ footer{
     cursor: pointer;
 }
 @media(max-width: 700px){
+    .ORMVAT{
+        font-size: x-small;
+        padding-bottom: 50px;
+        padding-right: 500px;
+    }
+
+    .ORMVAT ul{
+        font-size: small;
+    }
+    .slider img{
+        width: 150px;
+        height: 200px;
+        display: none;
+        border-radius: 25% 10% ;
+    }
     .text-box h1 h2{
         font-size: 10px;
     }
@@ -378,7 +389,7 @@ footer{
         background-color: rgba(254, 255, 253, 0.713);
         box-shadow: -1Opx 0 10px rgba(0,0,0,0.1);
         backdrop-filter: blur(10px);
-        display: flex;
+        display: hidden;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
