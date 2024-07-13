@@ -58,11 +58,14 @@
             </div>
              <i class="fa fa-bars" ></i>
         </nav>
-    </section>
-    <div>
-          <h2 class="bigTitle">Etudes <br>
+    </section>          
+    <h2 class="bigTitle">Etudes <br>
        Etudes réalisées 2003 à 2017 </h2> 
-        <ol class=" title">
+    <div class="box1">
+       <p>
+       <img class="EtudePic" src="images/AdobeStock_597956927_Preview.jpeg" alt="exemple d'études">
+       <div class="boxPara">
+        <ul class=" title">
             <li> &#x27BA; Etude d’exécution des réseaux d’irrigation dans les périmètres de PMH sur un linéaire de 45 Km.</li>
             <li> &#x27BA; Etudes et diagnostic des réseaux faisant ressortir 407 Km de canaux à remplacer et réhabiliter des canaux <br>
                 principaux pour un montant d’investissement d’environ 360 MDH.</li>
@@ -77,13 +80,20 @@
             <li> &#x27BA; Etude du projet d’exécution pour la reconversion collective à l’irrigation localisée des systèmes d’irrigation existants dans le périmètre des Beni Moussa de l’ouest, 2ème tranche :12 000 ha.</li>
             <li> &#x27BA; Etude de faisabilité économique et financière avec les Avants Projets sommaires pour la reconversion à l’irrigation localisée de la 3ème tranche (12 400 Ha).</li>
             <li> &#x27BA; Etude de sécurisation de l’alimentation en eau d’irrigation du système des Beni Moussa.</li>
-        </ol>
+        </ul>
+        </p>
+    </div>
+    </div>
+    <div class="box2">
     <h2 class="bigTitle">Etudes en cours de réalisation depuis 2018 </h2> 
-        <ol class=" title">
-            <li> &#x27BA;Etude d’exécution pour la reconversion collective à l’irrigation localisée des systèmes d’irrigation existants dans le périmètre de Tadla sur une superficie d’environ 13 800 ha.</li>
-            <li> &#x27BA;Elaboration d’un schéma directeur de télégestion des réseaux d’irrigation localisée dans le périmètre des Béni Moussa, ORMVA d Tadla.</li>
-            <li> &#x27BA;Étude des solutions d’amélioration du système de régulation hydraulique des canaux principaux des périmètres des Béni Moussa ORMVA du Tadla.</li>
-        </ol>
+      <img class="box2img" src="images/AdobeStock_771046532_Preview.jpeg" alt="projet en cours de realisation">
+      <div class="boxContenue">
+        <ul class=" title">
+            <li> &#x27BA;Etude d’exécution pour la reconversion collective à l’irrigation localisée des systèmes d’irrigation existants dans le périmètre de Tadla sur une superficie d’environ 13 800 ha.</li> <br>
+            <li> &#x27BA;Elaboration d’un schéma directeur de télégestion des réseaux d’irrigation localisée dans le périmètre des Béni Moussa, ORMVA d Tadla.</li> <br>
+            <li> &#x27BA;Étude des solutions d’amélioration du système de régulation hydraulique des canaux principaux des périmètres des Béni Moussa ORMVA du Tadla.</li> <br>
+        </ul>
+    </div>
     </div>
     <footer>
         <div class="row">
@@ -131,12 +141,27 @@
     font-size: 15px;
     cursor: pointer;
 }
+.box2img{
+    height: 160px;
+    float: right;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+.boxContenue{
+     display: flex;
+     margin: 30px auto;
+}
+.box2{
+   background-color: #efe3d7c3;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   width: 100%;
+   justify-content: space-around;
+}
 footer{
     position: absolute;
     width: 100%;
     background-color: #2F2B2E;
-
-
 }
 .row{
     display: flex;
@@ -170,8 +195,23 @@ footer{
    font-family: "Libre Baskerville" "Bebas Neue&family";
 }
 .title{
-    background-color: #f3efdee3;
     color: #604119;
+}
+.boxPara{
+    margin: 30px auto ;
+}
+.box1 {
+    background-color: #f6e8dada;
+    display: flex;
+    justify-content: space-between;
+}
+.EtudePic{
+    float: right;
+    margin: 10px auto;
+    height: 250px;
+    padding-top: 50px;
+    margin-right: 10px;
+    border-radius: 20px;
 }
 nav .logo img{
     object-fit: contain;
@@ -181,7 +221,7 @@ nav .logo img{
 }
 
  .header{
-    background-color: beige;
+    background-color: rgb(116, 116, 71);
     background-image: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3)), url(images/standard-quality-control-concept-m\ \(1\).jpg);
     background-position: center;
     background-size:cover;
