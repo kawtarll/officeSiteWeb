@@ -346,6 +346,19 @@ footer{
     cursor: pointer;
 }
 @media(max-width: 700px){
+    .card:hover img{
+        transform:scale(1.1);
+    }
+    .intro{
+        width: 100px;
+        height: 100px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 20px;
+        font-size: large;
+        color: white;
+        visibility: hidden;
+        }
     /*
     .ORMVAT p{
         font-size: x-small;
@@ -361,8 +374,16 @@ footer{
     .slider img{
         width: 150px;
         height: 200px;
-        display: none;
+        float: left;
         border-radius: 25% 10% ;
+    }
+    .ORMVAT p{
+        font-size:medium;
+        right: 350px;
+        top: 0px;
+    }
+    .ORMVAT ul{
+        visibility: hidden;
     }
     .text-box h1 h2{
         font-size: 10px;
@@ -420,7 +441,6 @@ footer{
             width: 200px;
             border-radius: 20px;
             background-color: rgb(246, 250, 246);
-            visibility: visible;
         }
 }
 
